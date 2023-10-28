@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
+  - Bullet
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -15,10 +18,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - spine
+  - arms
+  - legs
+  - no-self
   - 
   - 
   - 
@@ -38,6 +41,33 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4163027019
+    locked: 0
+  - name: Level
+    uniqueID: 859337053
+    locked: 0
+  - name: Tilemap
+    uniqueID: 153726123
+    locked: 0
+  - name: Item-
+    uniqueID: 412077231
+    locked: 0
+  - name: Man
+    uniqueID: 3538839121
+    locked: 0
+  - name: Item
+    uniqueID: 1184320927
+    locked: 0
+  - name: UI-
+    uniqueID: 1646576503
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 978378207
+    locked: 0
+  - name: UI+
+    uniqueID: 3601656741
     locked: 0
