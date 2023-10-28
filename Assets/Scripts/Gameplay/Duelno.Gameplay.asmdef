@@ -1,0 +1,18 @@
+{
+    "name": "Duelno.Gameplay",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e754defad47cad4469b5d9e7e0414764",
+        "GUID:1b4fb98d33fd4894e8cc3c776f33665c",
+        "GUID:320a4130a51526847b212e5a2c1a5e9b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
