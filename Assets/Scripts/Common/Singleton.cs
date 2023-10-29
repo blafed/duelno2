@@ -27,6 +27,11 @@ public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     }
     static T _instance;
 
+    private void Reset()
+    {
+        name = typeof(T).Name;
+    }
+
     /// <summary>
     /// An option to be overriden to control if singleton should be destroyed or not
     /// </summary>

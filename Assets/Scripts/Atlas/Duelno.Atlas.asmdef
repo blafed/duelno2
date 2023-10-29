@@ -1,0 +1,19 @@
+{
+    "name": "Duelno.Atlas",
+    "rootNamespace": "",
+    "references": [
+        "GUID:320a4130a51526847b212e5a2c1a5e9b",
+        "GUID:b37aeb11feeaa2d41834f19880dd1f9a",
+        "GUID:4f8f3ab998cfe9b429feccecd9a91916",
+        "GUID:1e954019d9b1a9e45ba3171a0982c908"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
