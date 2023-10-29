@@ -6,7 +6,7 @@ namespace Duelno.Gameplay.InputSystem
 {
 
     [Serializable]
-    public struct PlayerInputData : INetworkInput, ISmartInput
+    public struct PlayerInputData : INetworkInput
     {
         public float movement;
         public NetworkBool isJump;
@@ -14,10 +14,11 @@ namespace Duelno.Gameplay.InputSystem
         public NetworkBool isAttack;
         public Vector2 aim;
 
-        float ISmartInput.motion => movement;
-        bool ISmartInput.isJump => isJump;
-        bool ISmartInput.isAim => isAim;
-        bool ISmartInput.isAttack => isAttack;
-        Vector2 ISmartInput.aim => aim;
+
+        public struct MyInputData : INetworkInput
+        {
+            public float movement;
+        }
     }
+
 }

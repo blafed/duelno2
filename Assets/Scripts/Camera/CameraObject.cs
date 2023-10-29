@@ -31,6 +31,17 @@ namespace Duelno
             cameraFollow = GetComponentInChildren<CameraFollow>();
             cameraRestrictInsideBoundry = GetComponentInChildren<CameraRestrictInsideBoundry>();
         }
+        private void Start()
+        {
+            ResetScriptState();
+        }
+
+
+        public void ResetScriptState()
+        {
+            cameraFollow.enabled = false;
+            cameraRestrictInsideBoundry.enabled = false;
+        }
     }
 
 }
