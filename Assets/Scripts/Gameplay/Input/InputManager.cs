@@ -37,8 +37,10 @@ namespace Duelno.Gameplay.InputSystem
         }
 
         public IInputManagerModifier modifier { get; private set; }
-        public float aimStrengthSensitive = 3f;
 
+        public float aimStrengthSensitive => InputConfig.instance.aimStrengthSensitive;
+
+        [Header("All fields here are shown for debug purposes")]
         public float movement;
         public Vector2 aim;
 
