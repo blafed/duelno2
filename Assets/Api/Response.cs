@@ -4,7 +4,7 @@ using System.Collections;
 namespace Duelno.Api
 {
 
-    public class Response<T> : CustomYieldInstruction where T : new()
+    public class Response<T> : CustomYieldInstruction
     {
         private T _data;
         internal IEnumerator _coroutineRef;

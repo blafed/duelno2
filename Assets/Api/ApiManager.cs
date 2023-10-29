@@ -21,7 +21,7 @@ namespace Duelno
             }
         }
 
-        IEnumerator SendCoroutine<T>(UnityWebRequest request, Response<T> response) where T : new()
+        IEnumerator SendCoroutine<T>(UnityWebRequest request, Response<T> response)
         {
             yield return request.SendWebRequest();
 
@@ -56,7 +56,7 @@ namespace Duelno
         }
 
 
-        public Response<T> Send<T>(UnityWebRequest request) where T : new()
+        public Response<T> Send<T>(UnityWebRequest request)
         {
             var response = new Response<T>();
             response._coroutineRef = SendCoroutine(request, response);
