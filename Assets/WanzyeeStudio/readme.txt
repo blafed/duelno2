@@ -1,0 +1,1 @@
+This folder just for Newtonsoft json plugin
