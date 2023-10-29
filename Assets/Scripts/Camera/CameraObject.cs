@@ -6,10 +6,8 @@ using UnityEngine;
 namespace Duelno
 {
     using Cameras;
-    public class CameraObject : MonoBehaviour
+    public class CameraObject : SingletonScene<CameraObject>
     {
-        static CameraObject _instance;
-        public static CameraObject instance => _instance ? _instance : _instance = FindObjectOfType<CameraObject>(true);
         public new Camera camera => _camera ? _camera : _camera = GetComponentInChildren<Camera>();
 
 
@@ -26,7 +24,7 @@ namespace Duelno
         Camera _camera;
 
 
-        private void Awake()
+        protected override void OnAwake()
         {
             cameraFollow = GetComponentInChildren<CameraFollow>();
             cameraRestrictInsideBoundry = GetComponentInChildren<CameraRestrictInsideBoundry>();

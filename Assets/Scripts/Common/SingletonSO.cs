@@ -8,7 +8,7 @@ public abstract class SingletonSO<T> : ScriptableObject where T : SingletonSO<T>
     /// <summary>
     /// The instance located at the resources folder
     /// </summary>
-    public static T o
+    public static T instance
     {
         get
         {

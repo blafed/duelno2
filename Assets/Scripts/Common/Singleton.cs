@@ -10,7 +10,7 @@ public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     /// <summary>
     /// The instance of the object, it is being assigned at Awake() call
     /// </summary>
-    public static T o
+    public static T instance
     {
         get
         {

@@ -12,14 +12,14 @@ public abstract class SingletonScene<T> : MonoBehaviour where T : SingletonScene
     public static bool CheckInstanceExist()
     {
         _silentError = true;
-        var instance = o;
+        var instance = SingletonScene<T>.instance;
         _silentError = false;
         return instance;
     }
     /// <summary>
     /// The instance of the object, it is being assigned at Awake() call
     /// </summary>
-    public static T o
+    public static T instance
     {
         get
         {
